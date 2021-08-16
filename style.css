@@ -1,0 +1,173 @@
+/* Couleurs et polices */ 
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h4 {
+    font-family: 'Shrikhand', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media all and (max-width: 650px) {
+
+/* header */
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 5px 0;
+}
+
+header p {
+    font-weight: bold;
+}
+
+.localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(234, 234, 234);
+    height: 50px;
+    
+}
+
+.localisation i {
+    color: rgba(76, 76, 76);
+}
+
+.localisation p {
+    margin: 20px;
+}
+
+/* navigation */
+
+nav {
+    background-color: rgba(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textnav1 {
+    margin: 44px 0 27px 0;
+    padding: 0 10% 0 10%;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.textnav2 {
+    margin: 0 0 34px 0;
+    padding: 0 5% 0 5%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.explorer {
+    margin: 0 0 57px 0;
+    border-radius: 35px ;
+    border-style: none;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    font-size: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold ;
+    height: 50px;
+    padding: 0 4% 0 4%;
+    box-shadow: 3px 3px  20px #aaa;
+}
+
+/* section fonctionnement */
+
+.textfonctionnement1 {
+    margin-left: 3%;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 6% 6% 6%;
+    padding: 2% 5% 2% 5%;
+    background-color:  rgba(246, 246, 246);
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px lightgrey;
+    font-weight: bold;
+}
+
+.fonctionnement:hover {
+    background-color: #f5edff;
+}
+
+.cerleetape {
+    position: absolute;
+    left: 4%;
+    color: white;
+    background-color: #9356dc;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 0.8em ;
+}
+
+#fonctionnementsite i {
+    padding: 0 25px 0 10px;
+    color: rgba(76, 76, 76);
+}
+
+#fonctionnementsite i:hover {
+    color: #9356dc;
+}
+
+/* liste des restaurants */
+
+/* footer */
+
+footer {
+    background-color: #353535;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+footer h4 {
+    font-size: 1.3em;
+    padding: 5% 0 0 20px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 20px;
+    
+}
+
+footer li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+}
+footer i {
+    padding-right: 10px;
+}
+
+}
