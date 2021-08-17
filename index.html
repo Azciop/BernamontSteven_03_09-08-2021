@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8748611594.js" crossorigin="anonymous"></script>
     <title>OHMYFOOD!</title>
 </head>
+
 <body>
     <header>
-            <h1>ohmyfood</h1>
-            <div class="localisation">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Paris, Belleville</p>
-            </div>
-
-            <!-- explorateur de restaurants -->
-
-        <nav>
-                <p class="textnav1">Réservez le menu qui vous convient</p>
-                <p class="textnav2">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a class="explorer" title="Explorer nos restaurants" href="#restaurants"> <p>Explorer nos restaurants</p>
-                </a>  
-        </nav>
+        <h1>ohmyfood</h1>
     </header>
+    <nav>
+        <div class="localisation">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Paris, Belleville</h3>
+        </div>
 
-<!-- Fonctionnement du site -->
+        <!-- explorateur de restaurants -->
+
+        <p class="textnav1">Réservez le menu qui vous convient</p>
+        <p class="textnav2">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <button class="btn btnexplorer"
+        type="button">
+    Explorer nos restaurants
+</button>
+    </nav>
+
+
+    <!-- Fonctionnement du site -->
 
     <section id="fonctionnementsite">
-        <p class="textfonctionnement1">Fonctionnement</p>
+        <h3 class="textfonctionnement1">Fonctionnement</h3>
         <div class="fonctionnement">
             <p class="cerleetape">1</p>
             <i class="fas fa-mobile-alt"></i>
@@ -50,56 +56,60 @@
         </div>
     </section>
 
-<!-- Liste des retaurants-->
+    <!-- Liste des retaurants-->
 
     <section id="restaurants">
+
+        <h3>Restaurants</h3>
         <a class="liste-restaurants" href="#" title="La palette du goût">
-        <figure>
-        <img src="/public/img/restaurants/">
-        <figcaption>
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
-            <i class="far fa-heart"></i>
-            <i class="fas fa-heart"></i>
-        </figcaption>
-        </figure>
+            <figure>
+                <img src="/public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                <figcaption>
+                    <h5>La palette du goût</h5>
+                    <p>Ménilmontant</p>
+                    <i class="far fa-heart fa-lg etoile1"></i>
+                    <i class="fas fa-heart fa-lg etoile2"></i>
+                </figcaption>
+            </figure>
+            <div class="nouveaute">Nouveau</div>
         </a>
 
         <a class="liste-restaurants" href="#" title="La note enchantée">
             <figure>
-            <img src="/public/img/restaurants/">
-            <figcaption>
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
-            </figcaption>
-            </figure>
-            </a>
-
-            <a class="liste-restaurants" href="#" title="À la française">
-                <figure>
-                <img src="/public/img/restaurants/">
+                <img src="/public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
                 <figcaption>
-                    <h3>À`la française</h3>
-                    <p>Cité Rouge</p>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
+                    <h5>La note enchantée</h5>
+                    <p>Charonne</p>
+                    <i class="far fa-heart fa-lg etoile1"></i>
+                    <i class="fas fa-heart fa-lg etoile2"></i>
                 </figcaption>
-                </figure>
-                </a>
+            </figure>
+            <div class="nouveaute">Nouveau</div>
+        </a>
 
-                <a class="liste-restaurants" href="#" title="Le délice des sens">
-                    <figure>
-                    <img src="/public/img/restaurants/">
-                    <figcaption>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-méricourt</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </figcaption>
-                    </figure>
-                    </a>
+        <a class="liste-restaurants" href="#" title="À la française">
+            <figure>
+                <img src="/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                <figcaption>
+                    <h5>À la française</h5>
+                    <p>Cité Rouge</p>
+                    <i class="far fa-heart fa-lg etoile1"></i>
+                    <i class="fas fa-heart fa-lg etoile2"></i>
+                </figcaption>
+            </figure>
+        </a>
+
+        <a class="liste-restaurants" href="#" title="Le délice des sens">
+            <figure>
+                <img src="/public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                <figcaption>
+                    <h5>Le délice des sens</h5>
+                    <p>Folie-méricourt</p>
+                    <i class="far fa-heart fa-lg etoile1"></i>
+                    <i class="fas fa-heart fa-lg etoile2"></i>
+                </figcaption>
+            </figure>
+        </a>
     </section>
 
     <footer>
@@ -108,20 +118,21 @@
         <ul>
             <li>
                 <i class="fas fa-utensils"></i>
-                <p>Proposer un restaurant</p>
+                <p><a href="#">Proposer un restaurant</a></p>
             </li>
             <li>
                 <i class="fas fa-hands-helping"></i>
-                <p>Devenir partenaire</p>
+                <p><a href="#">Devenir partenaire</a></p>
             </li>
             <li>
-                <p>Mentions légales</p>
+                <p><a href="#">Mentions légales</a></p>
             </li>
             <li>
-                <p>Contact</p>
+                <p><a href="#">Contact</a></p>
             </li>
         </ul>
     </footer>
-    
+
 </body>
+
 </html>

@@ -1,0 +1,137 @@
+.localisation {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(234, 234, 234);
+	height: 50px;
+	width: 100%;
+	i {
+		color: rgba(76, 76, 76);
+	}
+	h3 {
+		margin: 20px;
+	}
+}
+
+/* navigation */
+
+nav {
+	background-color: rgba(246, 246, 246);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.textnav1 {
+	margin: 44px 0 27px 0;
+	padding: 0 10% 0 10%;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 1000;
+}
+
+.textnav2 {
+	margin: 0 0 34px 0;
+	padding: 0 5% 0 5%;
+	font-size: 1.2em;
+	text-align: center;
+}
+.btnexplorer {
+	margin: 0 0 57px 0;
+}
+/* section fonctionnement */
+
+.textfonctionnement1 {
+	margin-left: 3%;
+}
+
+.fonctionnement {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 6% 6% 6%;
+	padding: 2% 5% 2% 5%;
+	background-color: rgba(246, 246, 246);
+	border-radius: 25px;
+	box-shadow: 3px 3px 10px lightgrey;
+	font-weight: bold;
+}
+
+
+#fonctionnementsite .fonctionnement:hover i {
+	color: #9356dc;
+}
+
+#fonctionnementsite i {
+	padding: 0 25px 0 10px;
+	color: rgba(76, 76, 76);
+}
+
+.fonctionnement:hover {
+	background-color: #f5edff;
+}
+
+.cerleetape {
+	position: absolute;
+	left: 4%;
+	color: white;
+	background-color: #9356dc;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
+/* liste des restaurants */
+
+#restaurants {
+	background-color: rgba(246, 246, 246);
+	h3 {
+		margin: 0;
+		padding: 50px 0 20px 40px;
+	}
+	h5 {
+		font-size: 1em;
+		color: black;
+		margin: 20px 0 10px 14px;
+	}
+	p {
+		font-size: 0.9em;
+		color: black;
+		margin: 0 0 0px 14px;
+	}
+	img {
+		width: 100%;
+		height: 175px;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 15px 15px 0 0;
+	}
+	figure {
+		display: flex;
+		flex-direction: column;
+	}
+	figcaption {
+		background-color: white;
+		box-shadow: 3px 3px 20px #aaa;
+		border-radius: 0 0 15px 15px;
+	}
+}
+
+
+.fa-heart {
+	position: relative;
+	left: 350px;
+	bottom: 35px;
+}
+
+.etoile1 {
+	color: black;
+}
+
+.etoile2 {
+	display: none;
+}
