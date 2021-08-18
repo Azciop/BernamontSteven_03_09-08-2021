@@ -168,6 +168,9 @@ nav p {
   margin: 0;
   padding: 20px;
 }
+#restaurants a {
+  color: black;
+}
 #restaurants h5 {
   font-size: 1em;
   color: black;
