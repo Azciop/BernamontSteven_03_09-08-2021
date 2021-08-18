@@ -37,6 +37,7 @@ footer h4 {
 footer ul {
   list-style: none;
   padding-left: 20px;
+  margin: 0;
 }
 footer li {
   display: flex;
@@ -55,13 +56,27 @@ footer a {
   color: white;
 }
 
-header h1 {
+header {
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 10px 0 5px 0;
 }
-header h1 p {
-  font-weight: bold;
+header i {
+  font-size: 1.4rem;
+  color: black;
+}
+header h1 {
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo i {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 .localisation {
@@ -87,16 +102,14 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-
-.textnav1 {
+nav h2 {
   margin: 44px 0 27px 0;
   padding: 0 10% 0 10%;
   font-size: 1.5em;
   text-align: center;
   font-weight: 1000;
 }
-
-.textnav2 {
+nav p {
   margin: 0 0 34px 0;
   padding: 0 5% 0 5%;
   font-size: 1.2em;
@@ -152,20 +165,18 @@ nav {
 /* liste des restaurants */
 #restaurants {
   background-color: #f6f6f6;
-}
-#restaurants h3 {
   margin: 0;
-  padding: 50px 0 20px 40px;
+  padding: 20px;
 }
 #restaurants h5 {
   font-size: 1em;
   color: black;
-  margin: 20px 0 10px 14px;
+  margin: 10px 0 10px 14px;
 }
 #restaurants p {
   font-size: 0.9em;
   color: black;
-  margin: 0 0 0px 14px;
+  margin: 0 0 10px 14px;
 }
 #restaurants img {
   width: 100%;
@@ -174,63 +185,64 @@ nav {
   object-position: center;
   border-radius: 15px 15px 0 0;
 }
-#restaurants figure {
-  display: flex;
-  flex-direction: column;
-}
-#restaurants figcaption {
+#restaurants a {
   background-color: white;
   box-shadow: 3px 3px 20px #aaa;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px 15px 15px 15px;
 }
-
-.fa-heart {
-  position: relative;
-  left: 350px;
-  bottom: 35px;
+#restaurants .restaurantname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-.etoile1 {
-  color: black;
+#restaurants .restaurantfav {
+  display: flex;
+  align-items: center;
 }
-
-.etoile2 {
-  display: none;
-}
-
-i .fas fa-heart {
-  display: none;
-}
-
-.etoile2 {
-  display: none;
+#restaurants .fa-heart {
+  font-size: 2em;
 }
 
 img {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  object-position: center;
 }
 
 #carte-alafrancaise {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
+  width: 100%;
+  margin-top: -4rem;
   position: relative;
-  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#carte-alafrancaise .restaurantname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#carte-alafrancaise .restaurantfav {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
 #carte-alafrancaise h1 {
   padding-left: 20px;
-  padding-top: 20px;
+}
+#carte-alafrancaise .fa-heart {
+  font-size: 1.35em;
 }
 #carte-alafrancaise h2 {
   border-bottom: solid #99e2d0;
   width: 40px;
   font-size: 1em;
-  margin-left: 20px;
+  margin: 0 0 20px 20px;
 }
 #carte-alafrancaise .menu {
-  margin: 20px;
+  margin: 10px 20px 20px 20px;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -241,9 +253,11 @@ img {
 }
 #carte-alafrancaise h3 {
   font-size: 1em;
+  margin: 15px 0 10px 0;
 }
 #carte-alafrancaise p {
   font-size: 0.9em;
+  margin: 0 0 15px 0;
 }
 #carte-alafrancaise .price {
   display: flex;
@@ -253,21 +267,20 @@ img {
   padding-right: 20px;
   font-weight: bold;
 }
+#carte-alafrancaise .btncommander {
+  align-self: center;
+  margin: 30px 0 80px 0;
+}
 
 /* rectangle nouveauté */
 .nouveaute {
   background-color: #99e2d0;
-  color: #139273;
-  width: 80px;
-  height: 30px;
-  position: relative;
-  left: 320px;
-  bottom: 250px;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 .btn {
@@ -280,6 +293,13 @@ img {
   height: 50px;
   padding: 0 4% 0 4%;
   box-shadow: 3px 3px 20px #aaa;
+  cursor: pointer;
+}
+
+.maingrid {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,25 @@
-header h1 {
+header {
+    width: 100%;
     display: flex;
     justify-content: center;
+    i {
+        font-size: 1.4rem;
+        color: black;
+    }
+    h1 {
     margin: 10px 0 5px 0;
-    p {
-        font-weight: bold;
+    text-align: center;
+
+}
+    .logo {
+        display: flex;
+        align-items: center;
+        i {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
     }
 }
+
+

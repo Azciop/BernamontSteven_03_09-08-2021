@@ -1,35 +1,42 @@
-i .fas fa-heart {
-    display: none;
-}
-
-.etoile2 {
-	display: none;
-}
-
 img {
     width: 100%;
     height: 260px;
     object-fit: cover;
-    object-position: center;
 }
 
 #carte-alafrancaise {
     background-color: rgba(246, 246, 246);
     border-radius: 30px 30px 0 0;
+    width: 100%;
+    margin-top: -4rem;
     position: relative;
-    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    .restaurantname {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+        align-items: center;
+	}
+    .restaurantfav {
+		display: flex;
+		align-items: center;
+        padding-right: 20px;
+	}
     h1 {
         padding-left: 20px;
-        padding-top: 20px;
+    }
+    .fa-heart {
+        font-size: 1.35em;
     }
     h2 {
         border-bottom: solid  #99e2d0;
         width: 40px;
         font-size: 1em;
-        margin-left: 20px;
+        margin: 0 0 20px 20px;
     }
     .menu {
-        margin: 20px;
+        margin: 10px 20px 20px 20px;
         background-color: white;
         border-radius: 20px;
         display: flex;
@@ -40,17 +47,24 @@ img {
     }
     h3 {
         font-size: 1em;
+        margin: 15px 0 10px 0;
         }
     p {
         font-size: 0.9em;
+        margin: 0 0 15px 0 ;
     }
     .price {
         display: flex;
         align-items: flex-end;
-    p {
+        p {
         padding-right: 20px;
         font-weight: bold;
+        }
     }
+
+    .btncommander {
+        align-self: center;
+        margin: 30px 0 80px 0;
     }
     
 }
