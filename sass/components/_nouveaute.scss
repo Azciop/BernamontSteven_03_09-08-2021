@@ -1,8 +1,8 @@
 /* rectangle nouveauté */ 
 
 .nouveaute  {
-    background-color: #99e2d0;
-    color: #1b6150;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 40%);
     padding: .5rem;
     border-radius: .125rem;
     position: absolute;

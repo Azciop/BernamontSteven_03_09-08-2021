@@ -1,7 +1,7 @@
 .btn {
 	border-radius: 35px;
 	border-style: none;
-	background: linear-gradient(to bottom right, #ff79da, #9356dc);
+	background: linear-gradient(to bottom right, $color-secondary, $color-primary);
 	font-size: 1em;
 	color: white;
 	font-weight: bold;

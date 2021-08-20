@@ -38,6 +38,12 @@ nav {
 
 .btnexplorer {
 	margin: 0 0 57px 0;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	align-items: center;
+	&:hover {
+		background-color: lighten linear-gradient(to bottom right, $color-secondary, $color-primary, 20%);
+	}
 }
 /* section fonctionnement */
 
@@ -91,10 +97,6 @@ nav {
 	margin: 0;
 	padding: 20px;
 
-	a {
-		color: black;
-	}
-	
 	h5 {
 		font-size: 1em;
 		color: black;
@@ -114,9 +116,10 @@ nav {
 		border-radius: 15px 15px 0 0;
 	}
 	a {
-		background-color: white;
+		color: black;
 		box-shadow: 3px 3px 20px #aaa;
 		border-radius: 15px 15px 15px 15px;
+		position: relative;
 	}
 	.restaurantname {
 		display: flex;

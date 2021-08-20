@@ -12,11 +12,13 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    .restaurantname {
+    align-items: center;
+    .titlerestaurant {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
         align-items: center;
+        width: 100%;
 	}
     .restaurantfav {
 		display: flex;
@@ -34,6 +36,9 @@ img {
         width: 40px;
         font-size: 1em;
         margin: 0 0 20px 20px;
+    }
+    .carte {
+        width: 100%;
     }
     .menu {
         margin: 10px 20px 20px 20px;
@@ -63,8 +68,11 @@ img {
     }
 
     .btncommander {
-        align-self: center;
         margin: 30px 0 80px 0;
+        font-family: "Roboto", sans-serif;
+	    display: flex;
+	    align-items: center;
+        justify-content: center;
     }
     
 }

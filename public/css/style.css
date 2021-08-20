@@ -45,13 +45,13 @@ button {
 
 .btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
+  border: 0.1rem solid #15dea5;
   color: #15DEA5;
   background: #001534;
   cursor: pointer;
 }
 .btn:hover {
-  background: #15DEA5;
+  background: #15dea5;
   color: #D6FFF5;
 }
 .btn--full-width {
