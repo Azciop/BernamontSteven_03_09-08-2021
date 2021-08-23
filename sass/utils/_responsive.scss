@@ -1,0 +1,101 @@
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1024px;
+@media (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+	/* acceuil */
+
+	#fonctionnementsite {
+		margin: 20px;
+		.textfonctionnement1 {
+			margin: 0 0 20px 0;
+		}
+		.fonctionnementdetails {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 20px;
+			width: 100%;
+		}
+		.fonctionnement {
+			margin: 0;
+			padding: 10px 0 10px 10px;
+		}
+	}
+	.maingrid {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 20px;
+		column-gap: 20px;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	/* acceuil */
+
+	#fonctionnementsite {
+		margin: 20px;
+
+		.fonctionnementsite {
+			margin: 0 auto;
+			max-width: 1024px;
+		}
+
+		.textfonctionnement1 {
+			margin: 0 0 20px 0;
+			max-width: 1024px;
+		}
+
+		.fonctionnementdetails {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 40px;
+			.fonctionnement {
+				margin: 0;
+				padding: 10px 0 10px 20px;
+			}
+		}
+	}
+
+	/* liste des restaurants */
+
+	#restaurants {
+		.restaurants {
+			margin: 0 auto;
+			max-width: 1024px;
+		}
+		.maingrid {
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			row-gap: 20px;
+			column-gap: 20px;
+		}
+	}
+
+	/* restaurants */
+
+	.headerimg {
+		max-height: 500px;
+		height: auto;
+	}
+
+	#carte-alafrancaise {
+		margin: auto;
+		margin-top: -4rem;
+
+		.listeplats {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-content: flex-start;
+			width: 100%;
+			.carte {
+				padding: 0;
+				width: 30%;
+
+			}
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

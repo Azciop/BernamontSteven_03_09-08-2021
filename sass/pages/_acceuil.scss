@@ -51,6 +51,10 @@ nav {
 	margin-left: 3%;
 }
 
+.fonctionnementdetails {
+	width: 100%;
+}
+
 .fonctionnement {
 	display: flex;
 	flex-direction: row;
@@ -63,6 +67,9 @@ nav {
 	font-weight: bold;
 }
 
+#fonctionnementsite {
+	margin: 0;
+}
 
 #fonctionnementsite .fonctionnement:hover i {
 	color: #9356dc;

@@ -30,14 +30,14 @@ footer {
 }
 footer h4 {
   font-size: 1.3em;
-  padding: 5% 0 0 20px;
-  margin: 0;
+  padding: 20px 0 0 20px;
   font-weight: lighter;
+  margin: 0 auto;
 }
 footer ul {
   list-style: none;
   padding-left: 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 footer li {
   display: flex;
@@ -131,6 +131,10 @@ nav p {
   margin-left: 3%;
 }
 
+.fonctionnementdetails {
+  width: 100%;
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: row;
@@ -141,6 +145,10 @@ nav p {
   border-radius: 25px;
   box-shadow: 3px 3px 10px lightgrey;
   font-weight: bold;
+}
+
+#fonctionnementsite {
+  margin: 0;
 }
 
 #fonctionnementsite .fonctionnement:hover i {
@@ -224,6 +232,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 #carte-alafrancaise .titlerestaurant {
@@ -232,6 +241,12 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+#carte-alafrancaise .listeplats {
+  width: 100%;
+}
+#carte-alafrancaise .listeplats .carte {
+  padding: 20px;
 }
 #carte-alafrancaise .restaurantfav {
   display: flex;
@@ -248,24 +263,27 @@ img {
   border-bottom: solid #99e2d0;
   width: 40px;
   font-size: 1em;
-  margin: 0 0 20px 20px;
-}
-#carte-alafrancaise .carte {
-  width: 100%;
+  margin-bottom: 20px;
 }
 #carte-alafrancaise .menu {
-  margin: 10px 20px 20px 20px;
+  margin: 0;
   background-color: white;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 0 0px 8px;
   box-shadow: 3px 3px 20px #aaa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#carte-alafrancaise .menu p {
+  margin: 0 !important;
+  max-width: 100%;
+  white-space: nowrap;
 }
 #carte-alafrancaise h3 {
   font-size: 1em;
-  margin: 15px 0 10px 0;
+  margin: 0;
 }
 #carte-alafrancaise p {
   font-size: 0.9em;
@@ -306,7 +324,7 @@ img {
   color: white;
   font-weight: bold;
   height: 50px;
-  padding: 0 4% 0 4%;
+  padding: 0 20px 0 20px;
   box-shadow: 3px 3px 20px #aaa;
   cursor: pointer;
 }
@@ -314,7 +332,97 @@ img {
 .maingrid {
   display: grid;
   grid-template-rows: 1fr;
+  grid-template-columns: 1f;
   row-gap: 20px;
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+  /* acceuil */
+  #fonctionnementsite {
+    margin: 20px;
+  }
+  #fonctionnementsite .textfonctionnement1 {
+    margin: 0 0 20px 0;
+  }
+  #fonctionnementsite .fonctionnementdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    width: 100%;
+  }
+  #fonctionnementsite .fonctionnement {
+    margin: 0;
+    padding: 10px 0 10px 10px;
+  }
+
+  .maingrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  /* acceuil */
+  #fonctionnementsite {
+    margin: 20px;
+  }
+  #fonctionnementsite .fonctionnementsite {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+  #fonctionnementsite .textfonctionnement1 {
+    margin: 0 0 20px 0;
+    max-width: 1024px;
+  }
+  #fonctionnementsite .fonctionnementdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+  #fonctionnementsite .fonctionnementdetails .fonctionnement {
+    margin: 0;
+    padding: 10px 0 10px 20px;
+  }
+
+  /* liste des restaurants */
+  #restaurants .restaurants {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+  #restaurants .maingrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  /* restaurants */
+  .headerimg {
+    max-height: 500px;
+    height: auto;
+  }
+
+  #carte-alafrancaise {
+    margin: auto;
+    margin-top: -4rem;
+  }
+  #carte-alafrancaise .listeplats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 100%;
+  }
+  #carte-alafrancaise .listeplats .carte {
+    padding: 0;
+    width: 30%;
+  }
+  #carte-alafrancaise .listeplats p {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
