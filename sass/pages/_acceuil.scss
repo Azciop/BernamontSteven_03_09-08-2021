@@ -1,3 +1,9 @@
+/* loading */
+
+
+
+/* localisation */
+
 .localisation {
 	display: flex;
 	flex-direction: row;
@@ -28,7 +34,7 @@ nav {
 		text-align: center;
 		font-weight: 1000;
 	}
-	p{
+	p {
 		margin: 0 0 34px 0;
 		padding: 0 5% 0 5%;
 		font-size: 1.2em;
@@ -37,12 +43,12 @@ nav {
 }
 
 .btnexplorer {
-	margin: 0 0 57px 0;
 	font-family: "Roboto", sans-serif;
 	display: flex;
 	align-items: center;
 	&:hover {
-		background-color: lighten linear-gradient(to bottom right, $color-secondary, $color-primary, 20%);
+		background: linear-gradient(to bottom right, lighten($color-secondary, 20%), lighten($color-primary, 20%)
+		);
 	}
 }
 /* section fonctionnement */
@@ -96,7 +102,6 @@ nav {
 	font-size: 0.8em;
 }
 
-
 /* liste des restaurants */
 
 #restaurants {
@@ -113,13 +118,11 @@ nav {
 		font-size: 0.9em;
 		color: black;
 		margin: 0 0 10px 14px;
-
 	}
 	img {
 		width: 100%;
 		height: 175px;
 		object-fit: cover;
-		object-position: center;
 		border-radius: 15px 15px 0 0;
 	}
 	a {
@@ -140,6 +143,4 @@ nav {
 	.fa-heart {
 		font-size: 2em;
 	}
-	
 }
-

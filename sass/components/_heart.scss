@@ -1,0 +1,49 @@
+.restaurantfav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: 60px;
+	height: 70px;
+	.fas {
+		opacity: 0;
+		transition-duration: 0.5s;
+		background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(#9356dc),
+			to(#ff79da)
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.far {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+input:checked ~ .far {
+	transition-duration: 0.5s;
+	opacity: 0;
+}
+
+input:checked ~ .fas {
+	transition-duration: 0.5s;
+	opacity: 1;
+}

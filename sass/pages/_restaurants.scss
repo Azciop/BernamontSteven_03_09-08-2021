@@ -21,9 +21,11 @@ img {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		max-width: 650px;
 	}
 	.listeplats {
 		width: 100%;
+		max-width: 650px;
 		.carte {
 			padding: 20px;
 		}
@@ -40,10 +42,18 @@ img {
 		font-size: 1.35em;
 	}
 	h2 {
-		border-bottom: solid #99e2d0;
-		width: 40px;
+		position: relative;
 		font-size: 1em;
 		margin-bottom: 20px;
+		&::after {
+			content: "";
+			background-color: $color-tertiary;
+			position: absolute;
+			width: 40px;
+			left: 0;
+			bottom: -7px;
+			height: 3px;
+		}
 	}
 
 	.menu {
@@ -56,34 +66,44 @@ img {
 		box-shadow: 3px 3px 20px #aaa;
 		padding: 20px;
 		margin-bottom: 20px;
-		p {
-			margin: 0 !important;
-			max-width: 100%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		div {
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			p {
+				max-width: 100%;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				font-size: 0.9em;
+				margin: 0;
+			}
+		}
+		h3 {
+			font-size: 1em;
+			margin: 0;
+			text-overflow: ellipsis;
+			overflow: hidden;
 			white-space: nowrap;
 		}
-	}
-	h3 {
-		font-size: 1em;
-		margin: 0;
-	}
-	p {
-		font-size: 0.9em;
-		margin: 0 0 15px 0;
-	}
-	.price {
-		display: flex;
-		align-items: flex-end;
-		p {
-			padding-right: 20px;
-			font-weight: bold;
+		.price {
+			display: flex;
+			align-items: flex-end;
+			p {
+				padding-right: 20px;
+				font-weight: bold;
+				text-overflow: unset;
+			}
 		}
-	}
 
-	.btncommander {
-		margin: 30px 0 80px 0;
-		font-family: "Roboto", sans-serif;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		.btncommander {
+			margin: 30px 0 80px 0;
+			font-family: "Roboto", sans-serif;
+			display: flex;
+			align-items: center;
+		}
 	}
 }

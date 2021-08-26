@@ -17,6 +17,10 @@ $breakpoint-desktop: 1024px;
 		.fonctionnement {
 			margin: 0;
 			padding: 10px 0 10px 10px;
+			position: relative;
+			.cerleetape {
+				left: -4%;
+			}
 		}
 	}
 	.maingrid {
@@ -51,6 +55,10 @@ $breakpoint-desktop: 1024px;
 			.fonctionnement {
 				margin: 0;
 				padding: 10px 0 10px 20px;
+				position: relative;
+				.cerleetape {
+					left: -4%;
+				}
 			}
 		}
 	}
@@ -82,12 +90,16 @@ $breakpoint-desktop: 1024px;
 		margin: auto;
 		margin-top: -4rem;
 
+		.titlerestaurant {
+			max-width: none;
+		}
 		.listeplats {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
 			align-content: flex-start;
 			width: 100%;
+			max-width: none;
 			.carte {
 				padding: 0;
 				width: 30%;
