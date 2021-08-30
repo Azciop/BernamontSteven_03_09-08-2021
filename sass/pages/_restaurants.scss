@@ -57,47 +57,45 @@ img {
 	}
 
 	.menu {
-		margin: 0;
 		background-color: white;
-		border-radius: 20px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		border-radius: 1rem;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		box-shadow: 3px 3px 20px #aaa;
-		padding: 20px;
-		margin-bottom: 20px;
-		text-overflow: ellipsis;
 		overflow: hidden;
-		white-space: nowrap;
-		div {
-			text-overflow: ellipsis;
-			overflow: hidden;
-			white-space: nowrap;
-			p {
-				max-width: 100%;
-				text-overflow: ellipsis;
-				overflow: hidden;
-				white-space: nowrap;
-				font-size: 0.9em;
-				margin: 0;
-			}
-		}
-		h3 {
-			font-size: 1em;
-			margin: 0;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			white-space: nowrap;
-		}
-		.price {
-			display: flex;
-			align-items: flex-end;
-			p {
-				padding-right: 20px;
-				font-weight: bold;
-				text-overflow: unset;
-			}
-		}
+	  max-width: 100%;
+	  padding: 20 0;
+	  margin-bottom: 20px;
+   }
+	.menu:hover .icone {
+		margin-right: 0;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+   }
+	.menu:hover i {
+		transform: rotate(360deg);
+		transition-duration: 0.5s;
+   }
+	.description {
+		width: 100%;
+		display: flex;
+	  max-width: 100%;
+	  overflow: hidden;
+   }
+	.texte {
+		width: 100%;
+		margin-left: 1rem;
+	  max-width: 100%;
+	  overflow: hidden;
+	  padding: 0;
+   }
+	.price {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 20px;
+		margin-right: 1rem;
+	  max-width: 100%;
+	  font-weight: 900;
+   }
 
 		.btncommander {
 			margin: 30px 0 80px 0;
@@ -107,4 +105,4 @@ img {
 
 	}
 }
-}
+

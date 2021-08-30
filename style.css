@@ -205,6 +205,111 @@ header .logo {
   }
 }
 /* animation page restaurants */
+img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+#carte-alafrancaise {
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  margin-top: -4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#carte-alafrancaise .titlerestaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+}
+#carte-alafrancaise .listeplats {
+  width: 100%;
+  max-width: 650px;
+}
+#carte-alafrancaise .listeplats .carte {
+  padding: 20px;
+}
+#carte-alafrancaise .restaurantfav {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+#carte-alafrancaise h1 {
+  padding-left: 20px;
+}
+#carte-alafrancaise .fa-heart {
+  font-size: 1.35em;
+}
+#carte-alafrancaise h2 {
+  position: relative;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+#carte-alafrancaise h2::after {
+  content: "";
+  background-color: #99E2D0;
+  position: absolute;
+  width: 40px;
+  left: 0;
+  bottom: -7px;
+  height: 3px;
+}
+#carte-alafrancaise .menu {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 20 0;
+  margin-bottom: 20px;
+}
+#carte-alafrancaise .menu:hover .icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+#carte-alafrancaise .menu:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+#carte-alafrancaise .description {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+#carte-alafrancaise .texte {
+  width: 100%;
+  margin-left: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+#carte-alafrancaise .price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  margin-right: 1rem;
+  max-width: 100%;
+  font-weight: 900;
+}
+#carte-alafrancaise .btncommander {
+  margin: 30px 0 80px 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+/* apparition des plats */
 .plat1 {
   z-index: 1;
   font-size: 1em;
@@ -263,6 +368,35 @@ header .logo {
     transform: translateY(0);
   }
 }
+/* validation d'un plat */
+.icone {
+  width: 7rem;
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -7rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.icone > i {
+  color: #99e2d0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: white;
+  transition-duration: 0.5s;
+}
+
+.texte > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px 0 10px 0;
+  font-size: 1em;
+}
+
 /* localisation */
 .localisation {
   display: flex;
@@ -397,113 +531,6 @@ nav p {
 }
 #restaurants .fa-heart {
   font-size: 2em;
-}
-
-img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-#carte-alafrancaise {
-  background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
-  width: 100%;
-  margin-top: -4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#carte-alafrancaise .titlerestaurant {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 650px;
-}
-#carte-alafrancaise .listeplats {
-  width: 100%;
-  max-width: 650px;
-}
-#carte-alafrancaise .listeplats .carte {
-  padding: 20px;
-}
-#carte-alafrancaise .restaurantfav {
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-}
-#carte-alafrancaise h1 {
-  padding-left: 20px;
-}
-#carte-alafrancaise .fa-heart {
-  font-size: 1.35em;
-}
-#carte-alafrancaise h2 {
-  position: relative;
-  font-size: 1em;
-  margin-bottom: 20px;
-}
-#carte-alafrancaise h2::after {
-  content: "";
-  background-color: #99E2D0;
-  position: absolute;
-  width: 40px;
-  left: 0;
-  bottom: -7px;
-  height: 3px;
-}
-#carte-alafrancaise .menu {
-  margin: 0;
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 3px 3px 20px #aaa;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-#carte-alafrancaise .menu div {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-#carte-alafrancaise .menu div p {
-  max-width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 0.9em;
-  margin: 0;
-}
-#carte-alafrancaise .menu h3 {
-  font-size: 1em;
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-#carte-alafrancaise .menu .price {
-  display: flex;
-  align-items: flex-end;
-}
-#carte-alafrancaise .menu .price p {
-  padding-right: 20px;
-  font-weight: bold;
-  text-overflow: unset;
-}
-#carte-alafrancaise .menu .btncommander {
-  margin: 30px 0 80px 0;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  align-items: center;
 }
 
 /* rectangle nouveauté */
@@ -646,7 +673,7 @@ img {
     width: 30%;
   }
   #carte-alafrancaise .listeplats p {
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 
   .btncommander {
