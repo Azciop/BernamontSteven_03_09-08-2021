@@ -205,6 +205,64 @@ header .logo {
   }
 }
 /* animation page restaurants */
+.plat1 {
+  z-index: 1;
+  font-size: 1em;
+  -webkit-animation: fadeIn ease 0.2s, 1s slide-top 0s forwards;
+  animation: fadeIn ease 1s, 0.2s slide-top 0s forwards;
+  transform: translateY(100%);
+}
+
+.plat2 {
+  z-index: 1;
+  font-size: 1em;
+  -webkit-animation: fadeIn ease 2s, 200ms slide-top 200ms forwards;
+  animation: fadeIn ease 2s, 200ms slide-top 200ms forwards;
+  transform: translateY(100%);
+}
+
+.plat3 {
+  z-index: 1;
+  font-size: 1em;
+  -webkit-animation: fadeIn ease 3s, 200ms slide-top 400ms forwards;
+  animation: fadeIn ease 3s, 200ms slide-top 400ms forwards;
+  transform: translateY(100%);
+}
+
+.plat4 {
+  z-index: 1;
+  font-size: 1em;
+  -webkit-animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
+  animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
+  transform: translateY(100%);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-top {
+  to {
+    transform: translateY(50px);
+  }
+}
+@keyframes slide-top {
+  to {
+    transform: translateY(0);
+  }
+}
 /* localisation */
 .localisation {
   display: flex;
@@ -247,9 +305,6 @@ nav p {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
-}
-.btnexplorer:hover {
-  background: linear-gradient(to bottom right, #ffdff6, #c9abee);
 }
 
 /* section fonctionnement */
@@ -477,6 +532,12 @@ img {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.btn:hover {
+  background: linear-gradient(to bottom right, #ffdff6, #c9abee);
 }
 
 .maingrid {
@@ -586,6 +647,41 @@ img {
   }
   #carte-alafrancaise .listeplats p {
     margin: 0;
+  }
+
+  .btncommander {
+    z-index: 1;
+    font-size: 1em;
+    -webkit-animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
+    animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
+    transform: translateY(100%);
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-top {
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-top {
+    to {
+      transform: translateY(0);
+    }
   }
 }
 .restaurantfav {

@@ -112,4 +112,42 @@ $breakpoint-desktop: 1024px;
 			}
 		}
 	}
+	.btncommander {
+		z-index: 1;
+		font-size: 1em;
+		-webkit-animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
+		animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
+		transform: translateY(100%);
+	}
+	
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@-webkit-keyframes slide-top {
+		to {
+			transform: translateY(0);
+		}
+	}
+	
+	@keyframes slide-top {
+		to {
+			transform: translateY(0);
+		}
+	}
+	
 }
