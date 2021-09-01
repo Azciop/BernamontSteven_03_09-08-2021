@@ -5,7 +5,7 @@ $breakpoint-desktop: 1024px;
 
 	#fonctionnementsite {
 		background: white;
-	padding: 20px;
+		padding: 20px;
 		.textfonctionnement1 {
 			margin: 0 0 20px 0;
 		}
@@ -38,7 +38,7 @@ $breakpoint-desktop: 1024px;
 
 	#fonctionnementsite {
 		background: white;
-	padding: 20px;
+		padding: 20px;
 
 		.fonctionnementsite {
 			margin: 0 auto;
@@ -105,10 +105,12 @@ $breakpoint-desktop: 1024px;
 			.carte {
 				padding: 0;
 				width: 30%;
-
 			}
 			p {
-				margin: 0 0 20px 0;;
+				margin: 0 0 20px 0;
+			}
+			.price {
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -119,7 +121,7 @@ $breakpoint-desktop: 1024px;
 		animation: fadeIn ease 4s, 200ms slide-top 600ms forwards;
 		transform: translateY(100%);
 	}
-	
+
 	@-webkit-keyframes fadeIn {
 		0% {
 			opacity: 0;
@@ -128,7 +130,7 @@ $breakpoint-desktop: 1024px;
 			opacity: 1;
 		}
 	}
-	
+
 	@keyframes fadeIn {
 		0% {
 			opacity: 0;
@@ -137,17 +139,16 @@ $breakpoint-desktop: 1024px;
 			opacity: 1;
 		}
 	}
-	
+
 	@-webkit-keyframes slide-top {
 		to {
 			transform: translateY(0);
 		}
 	}
-	
+
 	@keyframes slide-top {
 		to {
 			transform: translateY(0);
 		}
 	}
-	
 }

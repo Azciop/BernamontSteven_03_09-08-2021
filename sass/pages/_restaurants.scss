@@ -35,13 +35,13 @@ img {
 		align-items: center;
 		padding-right: 20px;
 	}
-	h1 {
+	h2 {
 		padding-left: 20px;
 	}
 	.fa-heart {
 		font-size: 1.35em;
 	}
-	h2 {
+	h3 {
 		position: relative;
 		font-size: 1em;
 		margin-bottom: 20px;
@@ -59,45 +59,15 @@ img {
 	.menu {
 		background-color: white;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-		border-radius: 1rem;
+		border-radius: 20px;
 		display: flex;
 		overflow: hidden;
 	  max-width: 100%;
-	  padding: 20 0;
+	  padding: 0px;
 	  margin-bottom: 20px;
    }
-	.menu:hover .icone {
-		margin-right: 0;
-		transition-duration: 0.5s;
-		transition-timing-function: ease;
-   }
-	.menu:hover i {
-		transform: rotate(360deg);
-		transition-duration: 0.5s;
-   }
-	.description {
-		width: 100%;
-		display: flex;
-	  max-width: 100%;
-	  overflow: hidden;
-   }
-	.texte {
-		width: 100%;
-		margin-left: 1rem;
-	  max-width: 100%;
-	  overflow: hidden;
-	  padding: 0;
-   }
-	.price {
-		display: flex;
-		align-items: flex-end;
-		margin-bottom: 20px;
-		margin-right: 1rem;
-	  max-width: 100%;
-	  font-weight: 900;
-   }
-
-		.btncommander {
+	
+	.btncommander {
 			margin: 30px 0 80px 0;
 			font-family: "Roboto", sans-serif;
 	display: flex;

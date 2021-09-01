@@ -62,8 +62,39 @@
 
 /* validation d'un plat */ 
 
+.menu:hover .icone {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.menu:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+.description {
+    width: 100%;
+    display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+.texte {
+    width: 100%;
+    margin-left: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+.price {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+  max-width: 100%;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
 
- .icone {
+.icone {
 	 width: 7rem;
 	 background: #99e2d0;
 	 display: flex;
@@ -73,7 +104,7 @@
 	 transition-duration: 0.5s;
 	 transition-timing-function: ease;
 }
- .icone > i {
+.icone > i {
 	 color: #99e2d0;
 	 padding: 0.5rem;
 	 border-radius: 50%;

@@ -9,7 +9,7 @@
 	height: 70px;
 	.fas {
 		opacity: 0;
-		transition-duration: 0.5s;
+		transition-duration: 0s;
 		background: -webkit-gradient(
 			linear,
 			left top,
@@ -19,31 +19,51 @@
 		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		background-clip: text;	
 	}
+	.far {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.favover {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 3;
+	}
+	
+	input {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 3;
+	}
+	
+	input:checked ~ .far {
+		transition-duration: 0.5s;
+		opacity: 0;
+	}
+	
+	input:checked ~ .fas {
+		transition-duration: 0.5s;
+		opacity: 1;
+	}
+	
 }
 
-.far {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.restaurantfav:hover .far {
+	display: none;
 }
 
-input {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	opacity: 0;
-	cursor: pointer;
-	z-index: 3;
-}
-
-input:checked ~ .far {
+.restaurantfav:hover .fas {
+    display: inline;
 	transition-duration: 0.5s;
-	opacity: 0;
-}
-
-input:checked ~ .fas {
-	transition-duration: 0.5s;
-	opacity: 1;
+		opacity: 1;
 }
