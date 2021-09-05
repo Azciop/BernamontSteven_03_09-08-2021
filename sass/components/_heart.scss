@@ -3,8 +3,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: fit-content;
-	width: -moz-fit-content;
 	width: 60px;
 	height: 70px;
 	.fas {
@@ -45,17 +43,6 @@
 		cursor: pointer;
 		z-index: 3;
 	}
-	
-	input:checked ~ .far {
-		transition-duration: 0.5s;
-		opacity: 0;
-	}
-	
-	input:checked ~ .fas {
-		transition-duration: 0.5s;
-		opacity: 1;
-	}
-	
 }
 
 .restaurantfav:hover .far {
@@ -63,7 +50,6 @@
 }
 
 .restaurantfav:hover .fas {
-    display: inline;
-	transition-duration: 0.5s;
+	transition-duration: 1s;
 		opacity: 1;
 }
